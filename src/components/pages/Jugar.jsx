@@ -13,6 +13,9 @@ import linea from '/src/images/linea (1).png';
 
 function About() {
 
+  localStorage.setItem("fase1", 1);
+  localStorage.setItem("fase2", 0);
+  localStorage.setItem("fase3", 0);
   //PANTALLAS
   if (fase1 == 0 && fase2 == 0 && fase3 == 0) {
     localStorage.setItem("fase1", 1);
