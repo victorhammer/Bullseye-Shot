@@ -14,10 +14,10 @@ import linea from '/src/images/linea (1).png';
 function About() {
 
   //PANTALLAS
-  if (fase1 == 0 && fase2 == 0 && fase3 == 0) {
-    window.localStorage.setItem("fase1", 1);
-    window.localStorage.setItem("fase2", 0);
-    window.localStorage.setItem("fase3", 0);
+  if (fase1 == '0' && fase2 == '0' && fase3 == '0') {
+    window.localStorage.setItem("fase1", '1');
+    window.localStorage.setItem("fase2", '0');
+    window.localStorage.setItem("fase3", '0');
   };
 
   const [fase1, setfase1] = useState(window.localStorage.getItem("fase1"));
@@ -25,12 +25,12 @@ function About() {
   const [fase3, setfase3] = useState(window.localStorage.getItem("fase3"));
 
   const onClick1 = async () => {
-    if (fase2 == 1) {
+    if (fase2 == '1') {
 
-    } else if (fase2 == 0) {
-      window.localStorage.setItem("fase1", 0);
-      window.localStorage.setItem("fase2", 1);
-      window.localStorage.setItem("fase3", 0);
+    } else if (fase2 == '0') {
+      window.localStorage.setItem("fase1", '0');
+      window.localStorage.setItem("fase2", '1');
+      window.localStorage.setItem("fase3", '0');
       setfase1(window.localStorage.getItem("fase1"));
       setfase2(window.localStorage.getItem("fase2"));
       setfase3(window.localStorage.getItem("fase3"));
@@ -38,12 +38,12 @@ function About() {
     }
   }
   const onClick2 = async () => {
-    if (fase3 == 1) {
+    if (fase3 == '1') {
 
-    } else if (fase3 == 0) {
-      window.localStorage.setItem("fase1", 0);
-      window.localStorage.setItem("fase2", 0);
-      window.localStorage.setItem("fase3", 1);
+    } else if (fase3 == '0') {
+      window.localStorage.setItem("fase1", '0');
+      window.localStorage.setItem("fase2", '0');
+      window.localStorage.setItem("fase3", '1');
       setfase1(window.localStorage.getItem("fase1"));
       setfase2(window.localStorage.getItem("fase2"));
       setfase3(window.localStorage.getItem("fase3"));
@@ -51,12 +51,12 @@ function About() {
     }
   }
   const onClick3 = async () => {
-    if (fase1 == 1) {
+    if (fase1 == '1') {
 
-    } else if (fase1 == 0) {
-      window.localStorage.setItem("fase1", 1);
-      window.localStorage.setItem("fase2", 0);
-      window.localStorage.setItem("fase3", 0);
+    } else if (fase1 == '0') {
+      window.localStorage.setItem("fase1", '1');
+      window.localStorage.setItem("fase2", '0');
+      window.localStorage.setItem("fase3", '0');
       setfase1(window.localStorage.getItem("fase1"));
       setfase2(window.localStorage.getItem("fase2"));
       setfase3(window.localStorage.getItem("fase3"));
@@ -157,7 +157,7 @@ function About() {
 
   return (
     <div>
-      {fase1 == 1 ?
+      {fase1 == '1' ?
         <section id="servicios2">
           
           <h2 className='titulo-centrito'>ELIGE UN TORNEO</h2>
@@ -202,7 +202,7 @@ function About() {
         </section>
 
         : ''}
-      {fase2 == 1 ?
+      {fase2 == '1' ?
         <div id='preguntas'>
           <div id="el_coso" className="filita">
             <div id="cosoizquierda">
@@ -254,7 +254,7 @@ function About() {
           </div>
         </div>
         : ''}
-      {fase3 == 1 ?
+      {fase3 == '1' ?
         <div className='jueguito'>
           <h2>Liga</h2>
           <Table responsive>
