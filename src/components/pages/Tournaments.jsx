@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Image from 'react-bootstrap/Image';
 import Accordion from 'react-bootstrap/Accordion';
 import { Link } from 'react-router-dom';
+import liga from'/src/images/liga.PNG';
+import eliminatoria from '/src/images/eliminatoria.jpg';
+import linea from '/src/images/linea (1).png';
 
 export default class Tournaments extends Component {
   render() {
@@ -13,7 +16,7 @@ export default class Tournaments extends Component {
             <div class="row cuidaito">
               <div class="col">
                 <div class="fotitos">
-                  <Image src={require('/src/images/liga.PNG')} alt="" />
+                  <Image src={(liga)} alt="" />
                 </div>
               </div>
               <div class="col">
@@ -77,7 +80,7 @@ export default class Tournaments extends Component {
               </div>
               <div class="col">
                 <div class="fotitos">
-                  <Image src={require('/src/images/eliminatoria.jpg')} alt="" />
+                  <Image src={(eliminatoria)} alt="" />
                 </div>
               </div>
             </div>
@@ -90,7 +93,7 @@ export default class Tournaments extends Component {
             <div class="row cuidaito">
               <div class="col">
                 <div class="fotitos">
-                  <Image src={require('/src/images/linea (1).png')} alt="" />
+                  <Image src={(linea)} alt="" />
                 </div>
               </div>
               <div class="col">

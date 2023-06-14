@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import { useAuth } from '../context/AuthContext';
+import logo from '../images/Captura5e.PNG';
 
 function Header() {
 
@@ -85,7 +86,7 @@ function Header() {
         <div className='fondo-header'>
             <Navbar bg="dark" variant='dark' expand="lg">
                 <div id='nav-edit'>
-                    <Navbar.Brand as={Link} to="/"><Image id='logo' src={require('../images/Captura5e.PNG')} roundedCircle /></Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/"><Image id='logo' src={(logo)} roundedCircle /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto mt-2 mt-lg-3 margin-nav">

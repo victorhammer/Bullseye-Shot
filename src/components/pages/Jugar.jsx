@@ -6,6 +6,11 @@ import { useState } from 'react'
 import { db } from '../../config/firebase';
 import { getDocs, getDoc, collection, doc, addDoc } from 'firebase/firestore';
 
+import liga from'/src/images/liga.PNG';
+import eliminatoria from '/src/images/eliminatoria.jpg';
+import linea from '/src/images/linea (1).png';
+
+
 function About() {
 
   //PANTALLAS
@@ -160,7 +165,7 @@ function About() {
             <div className="col ladito">
               <Link as={Link} to="#" onClick={onClick1}>
                 <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src={require('/src/images/liga.PNG')} />
+                  <Card.Img variant="top" src={(liga)} />
                   <Card.Body>
                     <Card.Title>Liga</Card.Title>
 
@@ -171,7 +176,7 @@ function About() {
             <div className="col">
 
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require('/src/images/eliminatoria.jpg')} />
+                <Card.Img variant="top" src={(eliminatoria)} />
                 <Card.Body>
                   <Card.Title>Eliminatoria</Card.Title>
 
@@ -182,7 +187,7 @@ function About() {
             <div className="col">
 
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require('/src/images/linea (1).png')} />
+                <Card.Img variant="top" src={(linea)} />
                 <Card.Body>
                   <Card.Title>Línea</Card.Title>
 

@@ -6,6 +6,12 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Image from 'react-bootstrap/Image'
 
+import logo from '../images/Captura5e.PNG';
+import instagram from '../images/instagram.png';
+import gmail from '../images/gmail.png';
+import twitter from '../images/twitter.png';
+import youtube from '../images/youtube.png';
+
 function Footer() {
 
     const [show1, setShow1] = useState(false);
@@ -126,25 +132,25 @@ function Footer() {
                 </div>
                 <div className="col">
                     <div id="logo_footer">
-                    <Link to="/Home"><Image id='logo' src={require('../images/Captura5e.PNG')} roundedCircle /></Link>
+                    <Link to="/"><Image id='logo' src={(logo)} roundedCircle /></Link>
                     </div>
                 </div>
                 <div className="col">
                     <div id="redes_footer">
                     <div className="row">
                             <div className="col">
-                                <Link to="https://www.instagram.com/"><Image id='instagram' src={require('../images/instagram.png')} roundedCircle /></Link>
+                                <Link to="https://www.instagram.com/"><Image id='instagram' src={(instagram)} roundedCircle /></Link>
                             </div>
                             <div className="col">
-                                <Link to="https://www.youtube.com/"><Image id='youtube' src={require('../images/youtube.png')} roundedCircle /></Link>
+                                <Link to="https://www.youtube.com/"><Image id='youtube' src={(youtube)} roundedCircle /></Link>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col">
-                                <Link to="https://twitter.com/?lang=es"><Image id='twitter' src={require('../images/twitter.png')} roundedCircle /></Link>
+                                <Link to="https://twitter.com/?lang=es"><Image id='twitter' src={(twitter)} roundedCircle /></Link>
                             </div>
                             <div className="col">
-                                <Link to="https://www.google.com/intl/es/gmail/about/"><Image id='gmail' src={require('../images/gmail.png')} roundedCircle /></Link>
+                                <Link to="https://www.google.com/intl/es/gmail/about/"><Image id='gmail' src={(gmail)} roundedCircle /></Link>
                             </div>
                         </div>
                         <div className="row direction">

@@ -2,8 +2,14 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import carou1 from '/src/images/11.PNG';
+import carou2 from '/src/images/22.PNG';
+import carou3 from '/src/images/33.PNG';
+import carou4 from '/src/images/44.PNG';
+import liga from'/src/images/liga.PNG';
+import eliminatoria from '/src/images/eliminatoria.jpg';
+import linea from '/src/images/linea (1).png';
 
 function Home() {
   return (
@@ -14,7 +20,7 @@ function Home() {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={require('/src/images/11.PNG')}
+              src={(carou1)}
               alt="First slide"
             />
             <Carousel.Caption>
@@ -23,7 +29,7 @@ function Home() {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={require('/src/images/22.PNG')}
+              src={(carou2)}
               alt="Second slide"
             />
 
@@ -33,7 +39,7 @@ function Home() {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={require('/src/images/33.PNG')}
+              src={(carou3)}
               alt="Third slide"
             />
 
@@ -43,7 +49,7 @@ function Home() {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={require('/src/images/44.PNG')}
+              src={(carou4)}
               alt="4º slide"
             />
 
@@ -58,7 +64,7 @@ function Home() {
           <div className="col ladito">
             <Link as={Link} to="/tournaments">
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require('/src/images/liga.PNG')} />
+                <Card.Img variant="top" src={(liga)} />
                 <Card.Body>
                   <Card.Title>Liga</Card.Title>
 
@@ -69,7 +75,7 @@ function Home() {
           <div className="col">
             <Link as={Link} to="/tournaments">
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require('/src/images/eliminatoria.jpg')} />
+                <Card.Img variant="top" src={(eliminatoria)} />
                 <Card.Body>
                   <Card.Title>Eliminatoria</Card.Title>
 
@@ -80,7 +86,7 @@ function Home() {
           <div className="col">
             <Link as={Link} to="/tournaments">
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require('/src/images/linea (1).png')} />
+                <Card.Img variant="top" src={(linea)} />
                 <Card.Body>
                   <Card.Title>Línea</Card.Title>
 
