@@ -13,30 +13,27 @@ import linea from '/src/images/linea (1).png';
 
 function About() {
 
-  localStorage.setItem("fase1", 1);
-  localStorage.setItem("fase2", 0);
-  localStorage.setItem("fase3", 0);
   //PANTALLAS
   if (fase1 == 0 && fase2 == 0 && fase3 == 0) {
-    localStorage.setItem("fase1", 1);
-    localStorage.setItem("fase2", 0);
-    localStorage.setItem("fase3", 0);
+    window.localStorage.setItem("fase1", 1);
+    window.localStorage.setItem("fase2", 0);
+    window.localStorage.setItem("fase3", 0);
   };
 
-  const [fase1, setfase1] = useState(localStorage.getItem("fase1"));
-  const [fase2, setfase2] = useState(localStorage.getItem("fase2"));
-  const [fase3, setfase3] = useState(localStorage.getItem("fase3"));
+  const [fase1, setfase1] = useState(window.localStorage.getItem("fase1"));
+  const [fase2, setfase2] = useState(window.localStorage.getItem("fase2"));
+  const [fase3, setfase3] = useState(window.localStorage.getItem("fase3"));
 
   const onClick1 = async () => {
     if (fase2 == 1) {
 
     } else if (fase2 == 0) {
-      localStorage.setItem("fase1", 0);
-      localStorage.setItem("fase2", 1);
-      localStorage.setItem("fase3", 0);
-      setfase1(localStorage.getItem("fase1"));
-      setfase2(localStorage.getItem("fase2"));
-      setfase3(localStorage.getItem("fase3"));
+      window.localStorage.setItem("fase1", 0);
+      window.localStorage.setItem("fase2", 1);
+      window.localStorage.setItem("fase3", 0);
+      setfase1(window.localStorage.getItem("fase1"));
+      setfase2(window.localStorage.getItem("fase2"));
+      setfase3(window.localStorage.getItem("fase3"));
 
     }
   }
@@ -44,12 +41,12 @@ function About() {
     if (fase3 == 1) {
 
     } else if (fase3 == 0) {
-      localStorage.setItem("fase1", 0);
-      localStorage.setItem("fase2", 0);
-      localStorage.setItem("fase3", 1);
-      setfase1(localStorage.getItem("fase1"));
-      setfase2(localStorage.getItem("fase2"));
-      setfase3(localStorage.getItem("fase3"));
+      window.localStorage.setItem("fase1", 0);
+      window.localStorage.setItem("fase2", 0);
+      window.localStorage.setItem("fase3", 1);
+      setfase1(window.localStorage.getItem("fase1"));
+      setfase2(window.localStorage.getItem("fase2"));
+      setfase3(window.localStorage.getItem("fase3"));
 
     }
   }
@@ -57,12 +54,12 @@ function About() {
     if (fase1 == 1) {
 
     } else if (fase1 == 0) {
-      localStorage.setItem("fase1", 1);
-      localStorage.setItem("fase2", 0);
-      localStorage.setItem("fase3", 0);
-      setfase1(localStorage.getItem("fase1"));
-      setfase2(localStorage.getItem("fase2"));
-      setfase3(localStorage.getItem("fase3"));
+      window.localStorage.setItem("fase1", 1);
+      window.localStorage.setItem("fase2", 0);
+      window.localStorage.setItem("fase3", 0);
+      setfase1(window.localStorage.getItem("fase1"));
+      setfase2(window.localStorage.getItem("fase2"));
+      setfase3(window.localStorage.getItem("fase3"));
     }
   }
 
