@@ -13,7 +13,7 @@ import linea from '/src/images/linea (1).png';
 
 function About() {
 
-  const [fase1, setfase1] = useState(localStorage.getItem("fase1") ? localStorage.getItem("fase1") : '0');
+  const [fase1, setfase1] = useState('1');
   const [fase2, setfase2] = useState('0');
   const [fase3, setfase3] = useState('0');
 
