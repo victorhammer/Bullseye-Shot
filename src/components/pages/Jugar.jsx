@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { db } from '../../config/firebase';
 import { getDocs, getDoc, collection, doc, addDoc } from 'firebase/firestore';
 
-import liga from'/src/images/liga.PNG';
+import liga from '/src/images/liga.PNG';
 import eliminatoria from '/src/images/eliminatoria.jpg';
 import linea from '/src/images/linea (1).png';
 
@@ -14,12 +14,13 @@ import linea from '/src/images/linea (1).png';
 function About() {
 
   //PANTALLAS
+  /*
   if (fase1 == '0' && fase2 == '0' && fase3 == '0') {
     window.localStorage.setItem("fase1", '1');
     window.localStorage.setItem("fase2", '0');
     window.localStorage.setItem("fase3", '0');
   };
-
+  */
   const [fase1, setfase1] = useState(window.localStorage.getItem("fase1"));
   const [fase2, setfase2] = useState(window.localStorage.getItem("fase2"));
   const [fase3, setfase3] = useState(window.localStorage.getItem("fase3"));
@@ -113,6 +114,13 @@ function About() {
   };
 
   useEffect(() => {
+    //PANTALLAS
+    if (fase1 == '0' && fase2 == '0' && fase3 == '0') {
+      window.localStorage.setItem("fase1", '1');
+      window.localStorage.setItem("fase2", '0');
+      window.localStorage.setItem("fase3", '0');
+    };
+
     getTorneo();
     getListaJugadores();
   }, []);
@@ -159,7 +167,7 @@ function About() {
     <div>
       {fase1 == '1' ?
         <section id="servicios2">
-          
+
           <h2 className='titulo-centrito'>ELIGE UN TORNEO</h2>
           <div className="row">
             <div className="col ladito">
