@@ -13,23 +13,23 @@ import linea from '/src/images/linea (1).png';
 
 function About() {
 
-  const [fase1, setfase1] = useState('0');
-  const [fase2, setfase2] = useState('0');
-  const [fase3, setfase3] = useState('0');
+  const [fase1, setfase1] = useState('');
+  const [fase2, setfase2] = useState('');
+  const [fase3, setfase3] = useState('');
 
 
 
   useEffect(() => {
 
-    /*
+    
     localStorage.setItem("fase1", '0');
     localStorage.setItem("fase2", '0');
     localStorage.setItem("fase3", '0');
     setfase1(localStorage.getItem("fase1"));
     setfase2(localStorage.getItem("fase2"));
     setfase3(localStorage.getItem("fase3"));
-    */
-   
+    
+
     //PANTALLAS
     if (fase1 == '0' && fase2 == '0' && fase3 == '0') {
       localStorage.setItem("fase1", '1');
