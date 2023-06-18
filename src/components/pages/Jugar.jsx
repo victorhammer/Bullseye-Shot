@@ -13,9 +13,9 @@ import linea from '/src/images/linea (1).png';
 
 function About() {
 
-  const [fase1, setfase1] = useState('');
-  const [fase2, setfase2] = useState('');
-  const [fase3, setfase3] = useState('');
+  const [fase1, setfase1] = useState(localStorage.getItem("fase1"));
+  const [fase2, setfase2] = useState(localStorage.getItem("fase2"));
+  const [fase3, setfase3] = useState(localStorage.getItem("fase3"));
 
 
 
