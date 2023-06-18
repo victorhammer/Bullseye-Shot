@@ -21,13 +21,15 @@ function About() {
 
   useEffect(() => {
 
+    /*
     localStorage.setItem("fase1", '0');
     localStorage.setItem("fase2", '0');
     localStorage.setItem("fase3", '0');
     setfase1(localStorage.getItem("fase1"));
     setfase2(localStorage.getItem("fase2"));
     setfase3(localStorage.getItem("fase3"));
-
+    */
+   
     //PANTALLAS
     if (fase1 == '0' && fase2 == '0' && fase3 == '0') {
       localStorage.setItem("fase1", '1');
